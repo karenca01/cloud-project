@@ -4,15 +4,6 @@ body {
     margin: 0;
 }
 
-/* header {
-    background-color: rgb(0, 0, 0);
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-} */
-
 header {
     display: flex;
     flex-direction: column;
@@ -111,7 +102,7 @@ header nav li a:hover {
     line-height: 1.6;
 }
 
-div p {
+.sectionContent p {
     margin: 0;
     padding: 20px;
 }
@@ -133,4 +124,57 @@ footer {
 
 footer p {
     margin: 0;
-} 
+}
+
+/* para la pagina de los lugares */
+.placesContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px;
+}
+
+.placeCard {
+    display: flex;
+    background-color: white;
+    width: 500px;
+    height: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.placeCard:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.placeCard img {
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+    align-items: stretch;
+}
+
+.placesInfo {
+    width: 65%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.placeCard h2 {
+    margin: 0 0 15px 0;
+    font-size: 20px;
+}
+
+.placeCard p {
+    padding: 0;
+    margin: 0;
+    line-height: 1.6;
+    color: #555;
+    font-weight: 300;
+}
